@@ -13,20 +13,20 @@
 	    device-orientation-permission-ui="enabled: false">
       <a-assets>
 	<img 
-		id="targets.mind;" 
+		id="targets;" 
 		src="https://github.com/Starks016/starks016.github.io/blob/4a890063aee5a16f1625d01687ba8304973b9cf1/targets.mind" 
 		/>
 	<a-asset-item 
-		id="avatarModel" 
-		src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf">
+		id="cuadro3" 
+		src="https://github.com/Starks016/starks016.github.io/blob/9c50b3c5a3d294bc1f14c8fc3af6563f53176ffd/cuadro3.fbx">
 		</a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel"
+        <a-plane src="#targets" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#cuadro3"
           animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
         >
       </a-entity>
