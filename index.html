@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con QR y Botones Animados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr-code {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            background: url('https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=EjemploQR') no-repeat center center;
+            background-size: cover;
+            border: 4px solid #000;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        .button:active {
+            transform: scale(0.9);
+        }
+
+        .button-secondary {
+            background-color: #6c757d;
+        }
+
+        .button-secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Código QR</h1>
+        <div class="qr-code"></div>
+        <div class="buttons">
+            <a href="#" class="button">Botón Primario</a>
+            <a href="#" class="button button-secondary">Botón Secundario</a>
+        </div>
+    </div>
+</body>
+</html>
